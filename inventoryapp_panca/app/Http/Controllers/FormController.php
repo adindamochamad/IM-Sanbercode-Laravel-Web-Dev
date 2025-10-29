@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
+   public function register()
+   {
+      return view('form');
+   }
+
    public function welcome(Request $request)
    {
       $firstName = $request->input('first_name');
